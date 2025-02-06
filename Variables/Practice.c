@@ -1,3 +1,5 @@
+// Sasha Rinitra, Variables Practice C
+
 #include <stdio.h>
 
 char name[] = "Sasha";

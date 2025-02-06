@@ -1,3 +1,5 @@
+// Sasha Rinitra, Expression Practice C
+
 #include <stdio.h> 
 #include <math.h>
 

@@ -1,4 +1,4 @@
-#Sasha Rinita, Expressio Notes Python
+#Sasha Rinita, Expression Notes Python
 
 #integers are numbers with no decimal points
 #floats are numbers with decimal points
