@@ -2,48 +2,47 @@
 
 #include <stdio.h>
 
-// Write a print statement telling the user what the program is (Budget Calculator)
 char welcome[] = "Welcome to Budget Calculator!";
-// Ask for monthly input (User input)
-float income_amount[] = "What is your monthly income";
-// Ask for rent/mortgage amount (User input)
-float rent_amount[] = "How much do you pay or your rent ever month?"
-// Ask for utilities amount (User input)
-float utilities_amount[] = "How much do you spend on utilities every month?"
-// Ask for groceries amount (User input)
-float groceries_amount[] = "How much do you spend on groceries every month?"
-// Ask for transportation amount (User input)
-float transportation_amount = "How much do you spend on your transportation?"
-// Calculate savings as 10% income (variable)
-savings = income_amount*0.1
-// Calculate spending money, income - (rent+utilities+groceries+transportations+savings) (variable)
-income_spending = rent_amount+utilities_amount+groceries_amount+transportation_amount+savings
-// Calculate percent of rent (rent/income[divide])*100 (variable)
-percent_rent = (rent_amount/income_amount)*100
-// Calculate percent of utilities (utilities/income[divide])*100 (variable)
-percent_utilities = (utilities_amount/income_amount)*100
-// Calculate percent of groceries (groceries/income[divide])*100 (variable)
-percent_groceries = (groceries_amount/income_amount)*100
-// Calculate percent of transportation (transportation/income[divide])*100 (variable)
-percent_transportation = (transportation_amount/income_amount)*100
-// Calculate percent of spending money (spending/income[divide])*100 (variable)
-percent_spending_income = (income_spending/income_amount)*100
-// Tell user category spending amount and percent for rent ("You spend", rent, "on rent and that is", percent_rent, "percent of your income")
-print("You spend", (f"{rent_amount:.2f}"), "on rent and that is", (f"{percent_rent:.1f}"), "percent of your income")
-// Tell user category spending amount and percent for utilities ("You spend $xx.xx on utilities and that is xx% of your income")
-print("You spend", (f"{utilities_amount:.2f}"), "on utilities and that is", (f"{percent_utilities:.1f}"), "percent of your income")
-// Tell user category spending amount and percent for groceries ("You spend $xx.xx on groceries and that is xx% of your income")
-print("You spend", (f"{groceries_amount:.2f}"), "on groceries and that is", (f"{percent_groceries:.1f}"), "percent of your income")
-// Tell user category spending amount and percent for transportation ("You spend $xx.xx on transportaion and that is xx% of your income")
-print("You spend", (f"{transportation_amount:.2f}"), "on transportation and that is", (f"{percent_transportation:.1f}"), "percent of your income")
-// Tell user category spending amount and percent for spending ("You spend $xx.xx on spending money and that is xx% of your income")
-print("You spend", (f"{income_spending:.2f}"), "in total and that is", (f"{percent_spending_income:.1f}"), "percent of your income")
-// Tell user category spending amount and percent for savings ("You spend $xx.xx on savings and that is 10% of your income")
-print("You save", (f"{savings:.2f}"), "and that is 10 percent of your income")
+float income_amount;
+float rent_amount;
+float utilities_amount;
+float groceries_amount;
+float transportation_amount;
+
+float percent_rent;
+float percent_utilities;
+float percent_groceries;
+float percent_transportation;
+float percent_spending_income;
 
 int main(void){
-    printf("%s\n", welcome);
-    scanf("%s\n", income_amount);
 
+    printf("%s\n", welcome);
+
+    printf("What is your monthly income?\n");
+    scanf("%d", &income_amount);
+
+    printf("How much do you pay for rent every month?\n");
+    scanf("%d", &rent_amount);
+
+    printf("How much do you spend for utilities every month?\n");
+    scanf("%d", &utilities_amount);
+
+    printf("How much do you spend on groceries every month?\n");
+    scanf("%d", &groceries_amount);
+
+    printf("How much do you spend on transportation every month?\n");
+    scanf("%d", &transportation_amount);
+
+    float savings = income_amount*0.1;
+    float income_spending = rent_amount+utilities_amount+groceries_amount+transportation_amount+savings;
+
+    float percent_rent = (rent_amount/income_amount)*100;
+    float percent_utilities = (utilities_amount/income_amount)*100;
+    float percent_groceries = (groceries_amount/income_amount)*100;
+    float percent_transportation = (transportation_amount/income_amount)*100;
+    float percent_spending_income = (income_spending/income_amount)*100;
+
+    printf("You spend, %f\n rent_amount);
     return 0;
 }
