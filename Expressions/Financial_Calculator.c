@@ -43,6 +43,10 @@ int main(void){
     float percent_transportation = (transportation_amount/income_amount)*100;
     float percent_spending_income = (income_spending/income_amount)*100;
 
-    printf("You spend, %f\n rent_amount);
+    printf("The amount of money you spend on rent is %.2f%% on rent and that is of your income\n", percent_rent);
+    printf("You spend", %.2f\n utilities_amount, "on utilities and that is", %.1f percent_utilities, "of your income");
+    printf("You spend", %.2f\n groceries_amount, "on groceries and that is", %.1f percent_rent, "of your income");
+    printf("You spend", %.2f\n rent_amount, "on transportation and that is", %.1f percent_rent, "of your income");
+
     return 0;
 }
