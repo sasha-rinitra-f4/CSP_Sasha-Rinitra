@@ -37,3 +37,6 @@ print(name + "2") #type error
 
 sentence = "The quick brown fox jumps over the lazy dog"
 print(sentence.find("fox"))
+
+word = sentence.find("fox")
+
