@@ -37,7 +37,7 @@ int main(void){
 
     float savings = income_amount*0.1;
     float income_spending = rent_amount+utilities_amount+groceries_amount+transportation_amount+savings;
-    float total_left = income_amount - income_spending - savings;
+    float total_left = income_amount - income_spending;
 
     float percent_rent = (rent_amount/income_amount)*100;
     float percent_utilities = (utilities_amount/income_amount)*100;
