@@ -20,7 +20,7 @@ int main(void) {
     printf("What is your favorite fruit?\n");
     scanf("%s", fruit);
     
-    printf("Who is your favorite cartoon charcter?\n");
+    printf("Who is your favorite cartoon character?\n");
     scanf("%s", cartoon_character);
 
     printf("What is your favorite place to go to during vacations and etc?\n");
