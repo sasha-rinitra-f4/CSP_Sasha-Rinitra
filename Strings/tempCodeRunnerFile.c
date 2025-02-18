@@ -1,1 +1,0 @@
-%s was eating a %s colored %s in %s\n
