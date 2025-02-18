@@ -1,3 +1,1 @@
- printf("%s\n", one);  //after concatination
-    strcat(three, one);
-    printf("%s", three);
+%s was eating a %s colored %s in %s\n

@@ -27,7 +27,7 @@ int main(void) {
     scanf("%s", place);
     // insert variables into the sentence to show the user (only one print statement) example: "Hello %s", name
     printf("Here is your sentence:\n");
-    printf("%s was eating a %s colored %s in %s\n", cartoon_character, color, fruit, place);
+    printf("%s was eating a %s colored %s in %s", cartoon_character, color, fruit, place);
 
   return 0;
 }
