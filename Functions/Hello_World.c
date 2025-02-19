@@ -1,8 +1,10 @@
 // Sasha Rinitra, Update Hello World C
 #include <stdio.h>
 char add(char type[20]){
+    char name[20];
     printf("%s\n", name);
-    
+    printf("Welcome to Hello World %s\n", name);
+
 }
 
 char name[20];
