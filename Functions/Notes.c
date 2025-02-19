@@ -11,16 +11,15 @@
   // printf("%d\n", num1+num2)
 //}
 // continued?
-char input(char type[20]){
+//const char* word(char type[50]){
     char answer[50];
-    printf("Please give me a %s:\n", type);
-    scanf("%s", answer);
+    printf("%s was %s until they somehow reached %s", word("name", 50), word("verb", 50), word("place", 50));
     return answer;
 }
 int main(void) {
   //printf("Hello World\n");
   //add();
   //add(3+5);
-  printf("%s was %s until they somehow reached %s". input("name"), input("verb"), input("place"));
+  
   return 0;
 }
