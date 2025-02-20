@@ -1,17 +1,21 @@
 // Sasha Rinitra, Update Hello World C
 #include <stdio.h>
 char add(char type[20]){
-    char name[20];
-    printf("%s\n", name);
-    printf("Welcome to Hello World %s\n", name);
-
+    char name1 = "Berin";
+    char name2 = "Josie";
+    char name3 = "William";
+    char name4 = "Maren";
+    char name5 = "Aven";
+    printf("Hello %s\n", name);
+    return type;
 }
 
-char name[20];
-int main(void) {
-    printf("Hello user, Please tell me your name:\n"); 
-    scanf("%s", name);
 
-        
+int main(void) {
+    type();
+    type();
+    type();
+    type();
+    type(); 
   return 0;
 }
