@@ -6,7 +6,7 @@ char add(char name[50]){
 
 
 int main(void) {
-    add("Hello, Malu");
+    add("Hello, Berin");
     add("Hello, Josie");
     add("Hello, William");
     add("Hello, Maren");

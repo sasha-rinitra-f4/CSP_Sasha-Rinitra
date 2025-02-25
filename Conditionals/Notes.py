@@ -25,14 +25,30 @@
 
 
 
-name = "Katie"
+#name = "Katie"
 
-if "a" in name:
-    print("Your name has the letter A!")
-else:
-    print("Your name doesn't have the letter A.")
+#if "a" in name:
+    #print("Your name has the letter A!")
+#else:
+    #print("Your name doesn't have the letter A.")
 
-if "a" in name or "e" in name or "i" in name or "o" in name or "u" in name:
-    print("Your name has a vowel!")
+#if "a" in name or "e" in name or "i" in name or "o" in name or "u" in name:
+    #print("Your name has a vowel!")
+#else:
+    #print("Your name doesn't have a vowel.")
+
+
+
+#Nested Conditional Statement: a lot of nested conditionals will become really confusing if many are used
+num = 6
+
+if num > 5 and num < 10:
+    if num == 7:
+        print(f"{num} is an unlucky number!")
+    else:
+        print(f"{num} is a large single digit number")
 else:
-    print("Your name doesn't have a vowel.")
+    if num == 4:
+        print(f"{num} is the best number!")
+    else:
+        print(f"That is {num}")

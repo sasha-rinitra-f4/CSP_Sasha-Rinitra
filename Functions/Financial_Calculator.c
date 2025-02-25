@@ -3,11 +3,16 @@
 #include <stdio.h>
 
 char welcome[] = "Welcome to Budget Calculator!";
-float income_amount;
-float rent_amount;
-float utilities_amount;
-float groceries_amount;
-float transportation_amount;
+float income;
+float rent;
+float utilities;
+float groceries;
+float transportation;
+
+float user(float){
+    printf("%s was %s until they somehow reached %s", word("name", 50), word("verb", 50), word("place", 50));
+    return answer;
+}
 
 float percent_rent;
 float percent_utilities;
@@ -56,4 +61,4 @@ int main(void){
     printf("You are left with $%.2f after all your necessities and spendings and that is %.2f%% of your income\n", total_left, percent_total_left);
     
     return 0;
-}
+}frgty
