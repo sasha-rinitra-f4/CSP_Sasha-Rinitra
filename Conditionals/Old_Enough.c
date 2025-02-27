@@ -10,14 +10,14 @@ int main(void){
   scanf("%d", &age);
 
 
-  if(age <= 14){
-    printf("You are eligible to go to school! But you can't get your permit, drive or vote:(");
-  }else if (age == 17){
+  if(age >= 15){
+    printf("You are eligible to go to school, get your permit, drive or vote:(");
+  }else if (age >= 17){
     printf("You are eligible to get your learners permit, go to school and drive but you can't vote yet:(");
-  }else if (age <= 4){
-    printf("You are not eligible to get your learners permit, go to school, drive or vote yet:(");
-  }else{
-    printf("You are eligible to get your permit, drive, go to school and vote!");
+  }else if (age >= 18){
+    printf("You are eligible to get your learners permit, go to school, drive and vote!");
+    }else{
+    printf("You are not eligible to get your permit, drive, go to school and vote :(");
     }
 
   return 0;
