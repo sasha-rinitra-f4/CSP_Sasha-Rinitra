@@ -1,6 +1,6 @@
 # Sasha Rinitra, Old Enough Python
 
-print("Welcome! In this program, you will check if you are old enough for certain categories!\n")
+print("Welcome In this program, you will check if you are old enough for certain categories!\n")
 
 age = int(input("How old are you?\n"))
 
