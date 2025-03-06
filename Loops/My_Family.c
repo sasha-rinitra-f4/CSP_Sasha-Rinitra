@@ -1,4 +1,4 @@
-// Sasha Rinitra, Template
+// Sasha Rinitra, My Family Loop C
 #include <stdio.h>
 
 
