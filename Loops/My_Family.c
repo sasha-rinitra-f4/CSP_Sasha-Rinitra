@@ -3,12 +3,12 @@
 
 
 int main(void) {
-    char movies[4][20] = {"Ajash", "Alishya", "Sasha", "Shan"};
-    int mlength = sizeof(movies)/ sizeof(movies[0]);
-    int m = 0;
-    while(m<mlength){
-        printf("Hello %s\n", movies[m]);
-        m++;
+    char cousins[4][20] = {"Ajash", "Alishya", "Sasha", "Shan"};
+    int clength = sizeof(cousins)/ sizeof(cousins[0]);
+    int c = 0;
+    while(c<clength){
+        printf("Hello %s\n", cousins[c]);
+        c++;
     }
   return 0;
 }
