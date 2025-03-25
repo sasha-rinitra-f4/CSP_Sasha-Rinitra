@@ -1,4 +1,4 @@
-#Sasha Rinitra, Josephine Chiu, Adelle Ponczoch, Malu Estevam: Text Based Adventure in Python
+#Sasha Rinitra, Josephine Chiu, Adelle Ponczoch, Malu Estevam: Text Based Adventure in Python- Stranded on
 
 
 # Requirements:
@@ -7,91 +7,95 @@
     # A loop
     # A conditional → 10 pts, Conditional has at least 3 different outputs
 
+# Malu and Sasha worked on this while loop with conditionals
+while True:  
+    print("Oh no! You are the sole survivor of a terrible shipwreck and you are stranded on an island. You must make tough choices to go home. You will be given 3 choices for every situation and only 2 of them will be right, if you die, you have to restart. Good luck! Hope you survive and get home!")  
+      
+    # Get the first choice  
+    day_one = input("Are you hungry, thirsty, or do you want to find shelter?\n").lower()  
+      
+    # DAY ONE  
+    if day_one == "shelter":  
+        shelter_choice = input("Do you choose leaves, bark, or a cave?\n").lower()  
+        if shelter_choice == "leaves" or shelter_choice == "bark":  
+            print("You survived, keep going.\n")  
+        elif shelter_choice == "cave":  
+            print("You got eaten by a bear. Restart.\n")  
+            break  # Ends the loop, player has to restart  
+        else:  
+            print("That is not an option.\n")  
+          
+    elif day_one == "hungry":  
+        hungry_choice = input("Do you want berries, nuts, or insects?\n").lower()  
+        if hungry_choice == "nuts" or hungry_choice == "insects":  
+            print("You survived, keep going.\n")  
+        elif hungry_choice == "berries":  
+            print("The berries were poisonous. Restart, you died.\n")  
+            break  # Ends the loop, player has to restart  
+        else:  
+            print("That is not an option.\n")  
+  
+    elif day_one == "thirsty":  
+        thirsty_choice = input("Do you want to go to a river, lake, or pond?\n").lower()  
+        if thirsty_choice == "river" or thirsty_choice == "lake":  
+            print("You survived, keep going.\n")  
+        elif thirsty_choice == "pond":  
+            print("That water was nasty. You died, restart.\n")  
+            break  # Ends the loop, player has to restart  
+        else:  
+            print("Not an option.\n")  
+    else:  
+        print("That is not an option\n")  
+        break  # Ends the loop     
 
-print("Oh no! You are the sole survivor of a terrible shipwreck and you are stranded on an island. You must make tough choices to go home. You will be given 3 choices for every situation and only 2 of them will be right, if you die, you have to restart. Good luck! Hope you survive and get home!")
-#Josephine did the following function:
-def input(choices):
-    return "Do you want " + choices + "?"
-print(input("food, water, or shelter"))
-print(input("to find civilization, gather weapons, or signal for help"))
-print(input("to find leaves, bark, or a cave"))
-print(input("to find berries, nuts, or insects"))
-print(input("to go to a river, lake, or pond"))
-
-
-
-
-# Malu did the following conditional for Day 1:
-if choices == "shelter":
-    input("Do you choose leaves, bark, or a cave?\n")
-    if choices3 == "leaves":
-        print("You survived, keep going.\n")
-    elif choices3 == "bark":
-        print("You survived, keep going.\n")
-    elif choices3 == "cave":
-        print("You got eaten by a bear, restart.\n")
-    else:
-        ("That is not an option.\n")
-       
-elif choices == "hungry":
-    input("Do you want berries, nuts, or insects?\n")
-    if choices4 == "berries":
-        print("The berries were poisonous. Restart, you died.\n")
-    elif choices4 == "nuts":
-        print("You survived, keep going.\n")
-    elif choices4 == "insects":
-        print("That was gross, but you survived. Keep going.\n")
-    else:
-        print("That is not an option.\n")
-
-
-elif choices == "thirsty":
-    input("Do you want to go to a river, lake, or pond?\n")
-    if choices5 == "river":
-        print("You survived, keep going.\n")
-    elif choices5 == "lake":
-        print("You survived, keep going.\n")
-    elif choices5 == "pond":
-        print("That water was nasty. You died, restart.\n")
-    else:
-        print("Not an option.\n")
-   
-else:
-    print("That is not an option.\n")
-   
-# Josephine did the following function:
-def result(choices):
-    return "You survived! " + choices
-print(result())
-print(result("You chose leaves."))
-print(result(choices))
+# DAY TWO
+print("It's the next day and you survived the first night. Keep going. Now, do you want to find civilization, gather weapons, or signal for help?")
+day_two = ["find civilization", "gather wapons", "signal for help"]
 
 
 
-
-
-
-if choices2 == "civilization":
+if day_two == "civilization":
     input("Do you want to take a hill trail, river trail, or forest trail?\n")
-elif choices2 == "gather weapons":
+elif day_two == "gather weapons":
     input("Do you want an axe, a spear, or a net?\n")
-elif choices2 == "signal for help":
+elif day_two == "signal for help":
     input("Do you want to gather leaves to create smoke, run to the beach and scream for help, or build a giant SOS sign with rocks?\n")
 
 
+# DAY THREE
+
+print("It’s the third day, if you survive today, help will come. A tsunami is coming!")
+day_three = ["climb a tree", "go to shelter", "run for your life"]
+
 # Adelle did the following input + parameter function
-say1 = "You survived!"
-say2 = "You died. Restart."
-def choice2(say1, say2):
-    if choice2 == "find civilization":
-        print
-    print(f"{say1}")
-    print(f"{say2}")
+#def user(day3):
+    #return (input(f"Do you want {day3}"))"Do you want "
+#print(input("to climb a palm tree, an oak tree, or a bamboo tree?"))
+
+#def user(word):
+#    return input(f"Do you want {word}:\n")
+#food = user("food")
+#water = user("water")
+#shelter = user("shelter")
 
 
-# Sasha did the following loop
-for choice in choices:
-    print(choice)
+# Josephine did the following function:
+#def result(choices):
+#    return "You survived! " + choices
+#print(result())
+#print(result("You chose leaves."))
+#print(result(choices))
+
+# Josephine did the following function:
+#def input(choices):
+#    return "Do you want " + choices + "?"
+#print(input("food, water, or shelter"))
+#print(input("to find civilization, gather weapons, or signal for help"))
+#print(input("to find leaves, bark, or a cave"))
+#print(input("to find berries, nuts, or insects"))
+#print(input("to go to a river, lake, or pond"))
 
 
 
+   
+  
