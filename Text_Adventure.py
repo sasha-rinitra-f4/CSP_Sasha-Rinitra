@@ -106,7 +106,7 @@ def day3(): # the function
                 
         elif day_three == "go to shelter":  
             shelters_choice = input("Do you want to go to a cliff over hang, tunnel, or climb a mountain? \n").lower()  
-            if shelters_choice == "cliff over hang" or shelters_choice == "mountain":  
+            if shelters_choice == "cliff over hang" or shelters_choice == "climb a mountain":  
                 print("You survived on every single level. Help will now come! Winner winner, chicken dinner.\n")
                 break  # Ends the loop, player has to restart   
             elif shelters_choice == "tunnel":  
