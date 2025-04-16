@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Advanced Notes</title>
+        <!--Embedded style sheets--><style>
+            /*Selector is How you tell the CSS, what in the page to change. 1. Element Selector:*/
+            *{
+                background-color: rgb(180, 137, 236);
+            }
+            li{
+                color: coral;
+            }
+            /*2. ID Selector*/
+            #even{
+                color:blue;
+                font-size: 20px;
+            }
+            /*3. Class Selector*/
+            .intro{
+                color:red;
+            }
+            #img.src{
+                font-size: 5px;
+                color: chocolate;
+            }
+            img{
+                width: 50%;
+            }
+            h1{
+                font-size: 20%;/*Can use 1em*/
+                text-align: center;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>HTML Advanced Notes</h1> 
+        <p class = "intro">Nesting an html tag is putting it inside of another one</p>
+        <ol>
+            <li>li tags must be nested</li>
+            <li>what appears on the webpage is nested in the body tag</li>
+        </ol>
+    </div>
+    <div>
+        <ul>
+            <li>Butterfinger</li>
+            <li
+            id= "even"> Crunch</li>
+            <li>100 Grand</li>
+        </ul>
+    </div>
+        <dl>
+            <dt>Aang</dt>
+            <img src="https://miro.medium.com/v2/resize:fit:1200/0*3xTjr7rYOjGYjKqi.jpg" alt="Aang trying to barter">
+            <p class="img-src"> Image from: medium</p>
+            <small><small><small><dd>Image from: https://bjornjohann.medium.com/the-wondrous-pacifism-of-avatar-aang-362ef3d048c4 </dd></small></small>
+            <dd>The last airbender. The avatar... kind a dork</dd>
+            <dt>Katara</dt>
+            <dd>Water bender. From the South pole. Gives speeches about hope all the time.</dd>
+        </dl>
+        <p>additional information placed in the opening tag that gives more details to the computer about that tag</p>
+        <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank"> Attributes</a>
+        <a href="https://www.w3schools.com/html/html_links.asp"target ="_blank">Links</a>
+
+    </body>
+</html>
