@@ -1,0 +1,31 @@
+*{
+    background-color: blanchedalmond;
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    background-color: rgba(170, 133, 90, 0.842);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#one{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+/*Generic font families
+1. Serif
+2. Sans-serif
+3. Monospace
+4. Cursive
+5. Fantasy */
