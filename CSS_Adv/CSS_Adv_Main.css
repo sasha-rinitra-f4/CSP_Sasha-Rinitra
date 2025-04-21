@@ -29,3 +29,8 @@ p{
 3. Monospace
 4. Cursive
 5. Fantasy */
+#no{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
