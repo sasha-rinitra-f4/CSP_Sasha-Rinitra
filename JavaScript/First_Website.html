@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Studying Techniques for Students</title>
+        <script src ="First_Website.js"></script>
         <style>
-        *{
+        body{
             background-color: #BBB2AB;
             color: #402918;
             font-family: "Yellowtail", cursive;
@@ -13,17 +14,20 @@
             text-align: center;
         }
         img{
-            width: 70%;
+            width: 50%;
             margin: 50px;
         }
         #tech{
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
             padding: 10px;
             margin: 5px;
         }
-
+        #extra{
+                display: none;
+        }
     </style>
+
     </head>
     <body>
     <div id ="tech">
@@ -36,7 +40,7 @@
         </ul> 
         <br>
         <h2>The Feynman Technique</h2> 
-        <img src = "https://oca-wp-journals.s3.eu-west-2.amazonaws.com/wp-content/uploads/sites/2229/2021/10/Untitled-1024x791.png">
+        <img id ="img" onmouseover="change()"src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTo8qfvL3lLIo8a6g81krHF35U2jwrdsQnng&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFAfGc-INVp75THKKuWPLwEvQ0wJTxRle9g&s">
         <p><i>The Feynman Technique</i> is a learning method where you explain a concept in simple terms, as if teaching it to a child, identifying knowledge gaps and refining your understanding through simplification and analogies. Here's a breakdown: <br> <b>1. Choose a Concept:</b> Select a topic you want to learn or improve your understanding of. <br> <b>2. Explain in Simple Terms:</b> Write down your current understanding of the concept, as if you were explaining it to someone with no prior knowledge. <br> <b>3. Identify Gaps:</b> As you explain, you'll likely encounter areas where your understanding is weak or incomplete. </br> <b>4. Review and Refine:</b> Go back to your source material and fill in those knowledge gaps, then rewrite your explanation to be even simpler and more accurate. <br> <b>5. Simplify and Analogize:</b> Continue to simplify your explanation and use analogies to make the concept easier to grasp and remember.</p>
         
         <div><h2>The Pomodoro Technique</h2>
