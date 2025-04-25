@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Staycation</title>
+        <script src ="Staycation.js"></script>
+        <style>
+        #head{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50px; 
+            background-color: #c5a186;
+        }
+        body{
+            background-color: #644126;
+            color: #36281e;
+            font-family: "Yellowtail", cursive;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 50%;
+            margin: 50px;
+            border: #c5a186 solid 5px;
+        }
+        #tech{
+            display: grid;
+            grid-template-rows: auto auto;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 100px;
+        }
+        #extra{
+                display: none;
+        }
+    </style>
+
+    </head>
+    <body>
+    <div id ="tech">
+        <div id ="head">
+        <h1>Vacation Spot: Arches National Park</h1> 
+        <p>Arches National Park, located in eastern Utah, is renowned for its stunning red-rock landscapes and the densest concentration of natural stone arches in the world. The park boasts over 2,000 arches, along with other geological wonders like pinnacles, spires, and balanced rocks. Visitors can explore this unique environment through various activities, including hiking, biking, and camping. Why you should go there:</p>
+        </div>
+        <img id ="img" onmouseover="change()"src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1VrfgIaTlo7nhKYF5gJrfCfVWwCK-PUdaw&shttps://i0.wp.com/www.firefallphotography.com/wp-content/uploads/2019/06/2019-Arches-04-24-1467-HDR-Pano-Skew-1.jpg?resize=960%2C576&ssl=1">
+        <ul>
+            <li><b>1. Unique and Inspiring Landscape:</b> The park boasts over 2,000 natural stone arches, along with pinnacles, balanced rocks, and other unique geological formations, offering a truly awe-inspiring experience. </li>
+            <li><b>2. Abundant Outdoor Activities:</b> Arches National Park provides opportunities for hiking, biking, canyoneering, rock climbing, and stargazing, catering to various activity levels and interests</li>
+            <li><b>3. Scenic Beauty and Photogenic Opportunities:</b> The park's red rock landscape, vibrant sunsets, and clear night skies create a visually stunning backdrop for photography and appreciation of nature's artistry. </li>
+            <li><b>4. Educational and Historical Significance:</b> Visitors can learn about the park's geological history, the forces that shaped the landscape, and the impact of erosion on the formation of the iconic arches</li>
+        </ul> 
+        <br>
+        <button id ="shw" onclick ="more()">Show more</button>
+        <div id ="extra">
+            <p>Why Feynman Technique works well:</p>
+            <ul>
+                <li>You learn with intention.</li>
+                <li>Breaking down topics into digestible chunks and explaining them helps you identify gaps in your knowledge</li>
+                <li>This creates new neural pathways in your brain, which makes connecting ideas and concepts easier.</li>
+            </ul>
+            <a href="https://www.usa.edu/blog/study-techniques/">Click here for more information on other studying techniques</a>
+        </div>
+        <br>
+        <br>
+    </div>
+</html>
