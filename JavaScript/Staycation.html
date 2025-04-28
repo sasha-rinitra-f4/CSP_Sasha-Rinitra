@@ -15,14 +15,19 @@
             background-color: #644126;
             color: #36281e;
             font-family: "Yellowtail", cursive;
+            font-style: normal;
         }
         h1{
             text-align: center;
         }
         img{
-            width: 50%;
+            width: 20%;
             margin: 50px;
             border: #c5a186 solid 5px;
+        }
+        #img2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
         #tech{
             display: grid;
@@ -32,7 +37,22 @@
             border-radius: 100px;
         }
         #extra{
-                display: none;
+            display: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50px; 
+            background-color: #c5a186;
+        }
+        #para{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50px; 
+            background-color: #c5a186;
+        }
+        #hid{
+            width: 20%;
+            margin: 50px;
+            border: #644126 solid 5px;
         }
     </style>
 
@@ -44,6 +64,11 @@
         <p>Arches National Park, located in eastern Utah, is renowned for its stunning red-rock landscapes and the densest concentration of natural stone arches in the world. The park boasts over 2,000 arches, along with other geological wonders like pinnacles, spires, and balanced rocks. Visitors can explore this unique environment through various activities, including hiking, biking, and camping. Why you should go there:</p>
         </div>
         <img id ="img" onmouseover="change()"src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1VrfgIaTlo7nhKYF5gJrfCfVWwCK-PUdaw&shttps://i0.wp.com/www.firefallphotography.com/wp-content/uploads/2019/06/2019-Arches-04-24-1467-HDR-Pano-Skew-1.jpg?resize=960%2C576&ssl=1">
+        <div id ="img">
+        <img id ="img2" src = "https://i0.wp.com/mishmoments.com/wp-content/uploads/2019/09/arches-national-park-double-arch-89a.jpg?fit=900%2C725&ssl=1">
+        <img id ="img2" src = "https://static.wixstatic.com/media/166941_29d6a866fe15463e91600def39d8397a~mv2.jpg/v1/fill/w_560,h_328,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Milky_Way_Panorama_Longs_Peak_master_980.jpg">
+        </div>
+        <div id ="para">
         <ul>
             <li><b>1. Unique and Inspiring Landscape:</b> The park boasts over 2,000 natural stone arches, along with pinnacles, balanced rocks, and other unique geological formations, offering a truly awe-inspiring experience. </li>
             <li><b>2. Abundant Outdoor Activities:</b> Arches National Park provides opportunities for hiking, biking, canyoneering, rock climbing, and stargazing, catering to various activity levels and interests</li>
@@ -51,16 +76,19 @@
             <li><b>4. Educational and Historical Significance:</b> Visitors can learn about the park's geological history, the forces that shaped the landscape, and the impact of erosion on the formation of the iconic arches</li>
         </ul> 
         <br>
-        <button id ="shw" onclick ="more()">Show more</button>
-        <div id ="extra">
-            <p>Why Feynman Technique works well:</p>
-            <ul>
-                <li>You learn with intention.</li>
-                <li>Breaking down topics into digestible chunks and explaining them helps you identify gaps in your knowledge</li>
-                <li>This creates new neural pathways in your brain, which makes connecting ideas and concepts easier.</li>
-            </ul>
-            <a href="https://www.usa.edu/blog/study-techniques/">Click here for more information on other studying techniques</a>
         </div>
+        <button id ="shw" onclick ="more()">Show more</button>
+            <div id ="extra">
+            <p>Other National Parks:</p>
+            <img id ="hid" src = "https://www.travel-experience-live.com/wp-content/uploads/2017/06/National-Parks-of-Utah-in-Photos.jpg">
+            <ul>
+                <li><b>Zion National Park</b> is renowned for its stunning natural features, particularly the massive sandstone cliffs and the Virgin River carving through Zion Canyon. </li>
+                <li><b>Bryce Canyon National Park</b> is renowned for its unique landscape, particularly its vast collection of hoodoos, which are spire-like rock formations.</li>
+                <li><b>Capitol Reef National Park</b> is known for its unique geology, including the Waterpocket Fold and dramatic sandstone formations, and its rich cultural and natural history.</li>
+            </ul>
+            <a href="https://www.visitutah.com/plan-your-trip">Click here for more information on trip plannings</a>
+
+            </div>
         <br>
         <br>
     </div>
